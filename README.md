@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  <img src="docs/BrightMarker_teaser.png">
+  <img src="docs/BrightMarker_teaser.jpg">
 </p>
 
 
@@ -136,13 +136,13 @@ Now you can print the sliced file using your 3D printer!
 
 Once you have 3D printed your object embedding your QR or AurUco BrightMarker, you are ready to detect and read it.
 
-It is recommended that you use PyCharm to run the decoder demos both for QR and Aruco, however, the code can be run from a Terminal as well.
+
  
-### Detecting and reading QR codes
+### Detecting and reading the codes
 
-
-  
-- Run the following command in the terminal:
+- You can use Terminal or PyCharm to run the decoder demos both for QR and ArUco.
+- Have Python 3 and pip3 pre-installed on your system link for this is here version 3.10 or greater should work just fine.
+- Run the following command in the Terminal:
   * pip install numpy opencv-contrib-python dbr
   
 - Or in PyCharm navigate to File > Settings > Project > Python Interpreter > Install packages (click the plus sign) and install the following packages:
@@ -156,21 +156,9 @@ It is recommended that you use PyCharm to run the decoder demos both for QR and 
 - Navigate to  > .py
 - Open the file in an editor
 - Navigate to line 22 and confirm that CAMERA_STREAM is the same as the IR webcam ID
-  * CAMERA_STREAM = 1 works, depending on the computer. On some computers, it can be 0, 1, or 2, etc. based on if there is one or more internal webcams.
+  * CAMERA_STREAM = 1 works, depending on the computer. On some computers, it can be 0, 1, or 2, etc. based on whether there is one or more internal webcams.
 - You should see a window popup on your screen if everything went alright  
 
-### Detecting and reading ArUco markers
-  
-- Have Python 3 and pip3 pre-installed on your system link for this is here version 3.10 or greater should work just fine
-  
-- Run the following command in the terminal:
-  * pip install numpy opencv-contrib-python dbr
-  
-- Or in PyCharm navigate to File > Settings > Project > Python Interpreter > Install packages (click the plus sign) and install the following packages:
-
-* numpy
-* opencv-contrib-python
-* dbr
 
 
 ## #4 Mobile detection with OnePlus 8 Pro
@@ -186,9 +174,9 @@ It is recommended that you use PyCharm to run the decoder demos both for QR and 
 We use the User Datagram Protocol (UDP) to communicate BrightMarker(s) data to a Unity project.
 
 You will need 3 things:
-1. A Unity Project which is properly set up for your use case (AR, VR, Quest, Hololens, etc.).
+1. A Unity Project that is properly set up for your use case (AR, VR, Quest, Hololens, etc.).
 2. A code detection script (which can run with an IR camera with the proper filter).
-3. A data receiving script (running in your Unity hierarchy).
+3. A data-receiving script (running in your Unity hierarchy).
 
 Items 2 and 3 have been provided in this repository (see below).
 
@@ -199,7 +187,7 @@ private bool USE_UNITY_PLAY_MODE = false;
 private string IP_ADDRESS = "123.45.67.890";
 ```
 If you intend to use Quest Link (for Meta Quest headsets) or holographic remoting (for Hololens headsets), set the first variable to 'true' and ignore the second.
-Quest Link and holographic remoting involve streaming Unity's play mode to a headset over Wi-Fi or via USB; in other words, you never build your application, only stream it to the headset. Note that you must run the detection script on the same computer which is running Unity for this method to work.
+Quest Link and holographic remoting involve streaming Unity's play mode to a headset over Wi-Fi or via USB; in other words, you never build your application, only stream it to the headset. Note that you must run the detection script on the same computer that is running Unity for this method to work.
 * [Quest Link with Unity tutorial](https://youtu.be/sSD798Ov2oY)
 * [Hololens holographic remoting with Unity tutorial](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/holograms-101)
 
@@ -207,7 +195,7 @@ If you would like to build your Unity application to the headset, set the first 
 
 [Two example code detection scripts](./unityXR/code%20detection/) can be found in this repository, one for position detection, and the other z-rotation detection. 
 
-At the tops of both scripts, you will see two variables:
+At the top of both scripts, you will see two variables:
 ```python
 UDP_IP_ADDRESS = "127.0.0.2"
 CAMERA_INPUT = 0
@@ -218,7 +206,7 @@ If you intend to use the Unity play mode (Quest Link, holographic remoting), lea
 
 The second variable is the input number for your IR camera. If 0 doesn't work, try 1, 2, etc. until the script runs with the IR camera (instead of, for example, your integrated webcam).
 
-It's useful to create a script which interprets the data being received by the UDPReceive.cs script. In Unity, create a new script, and add it to an empty GameObject (or any GameObject). Declare the following variable in the class constructor:
+It's useful to create a script that interprets the data being received by the UDPReceive.cs script. In Unity, create a new script, and add it to an empty GameObject (or any GameObject). Declare the following variable in the class constructor:
 ```c#
 public UDPReceive udpReceive;
 ```
@@ -228,7 +216,7 @@ Now, in the Update() method of your script, write:
 string data = udpReceive.data;
 Debug.Log(data);
 ```
-This script will now output your data into the console. You can remove this Debug.log() statement, it's only there so that you can see what your data looks like and then decide how you want to parse it. For example, if what you see printed to the console is this...
+This script will now output your data into the console. You can remove this Debug.log() statement, it's only there so that you can see what your data looks like and then decide how you want to parse it. For example, if what you see printed on the console is this...
 ```python
 ArUco ID: 3, X-coord: 10, Y-coord: 20, Z-coord: 30
 ```
@@ -320,7 +308,7 @@ Gerber files are the industry-standard file format that PCB manufacturers use to
 
 Drill files are used by the PCB manufacturer to know where to drill holes in the PCB.
 
-- Still in the Plot window, go to the `Drill Files` tab.
+- In the Plot window, go to the `Drill Files` tab.
 - Select the appropriate options for your design (usually the default options are fine).
 - Click `Generate Drill File`.
 - Then click `Close` to close the Plot window.
