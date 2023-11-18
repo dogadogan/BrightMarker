@@ -6,18 +6,19 @@
    <sub>By [Mustafa Doga Dogan](https://www.dogadogan.com/)\*, Raul Garcia-Martin\*†, Patrick William Haertel\*, Jamison John O'Keefe\*, Ahmad Taka\*, Akarsh Aurora\*, Raul Sanchez-Reillo†, and [Stefanie Mueller](https://hcie.csail.mit.edu/stefanie-mueller.html)\*</sub>
    
    <sup>\*MIT and †Universidad Carlos III de Madrid</sup>
-   
-   If you use BrightMarker as part of your research, please cite it as follows.
-   
-   > <sup>Mustafa Doga Dogan, Raul Garcia-Martin, Patrick William Haertel, Jamison John O'Keefe, Ahmad Taka, Akarsh Aurora, Raul Sanchez-Reillo, and Stefanie Mueller. 2023. BrightMarker: 3D Printed Fluorescent Markers for Object Tracking. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '23). Association for Computing Machinery, New York, NY, USA, Article 55, 1–13. https://doi.org/10.1145/3586183.3606758</sup>
-
+  
 
 <p align="center">
   <img src="docs/BrightMarker_teaser.jpg">
 </p>
-<sup>BrightMarkers are embedded into objects using a NIR-fluorescent filament. (a) When viewed with a NIR camera with the matching filter, the markers appear with high contrast, which allows them to be tracked even when the objects are in motion, e.g., on a conveyor belt. (b) BrightMarker  can be used to fabricate custom wearables for tracking, or (c) for transforming physical controls into precise input methods in mixed reality environments.</sup>
+<sup>BrightMarkers are embedded into objects using a NIR-fluorescent filament. (a) When viewed with a NIR camera with the matching filter, the markers appear with high contrast, which allows them to be tracked even when the objects are in motion, e.g., on a conveyor belt. (b) BrightMarker  can be used to fabricate custom wearables for tracking, or (c) for transforming physical controls into precise input methods in mixed reality environments.<br></sup>
+<br>
 
+   If you use BrightMarker as part of your research, you should cite it as follows:
+   
+   <sup>Mustafa Doga Dogan, Raul Garcia-Martin, Patrick William Haertel, Jamison John O'Keefe, Ahmad Taka, Akarsh Aurora, Raul Sanchez-Reillo, and Stefanie Mueller. 2023. BrightMarker: 3D Printed Fluorescent Markers for Object Tracking. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '23). Association for Computing Machinery, New York, NY, USA, Article 55, 1–13. https://doi.org/10.1145/3586183.3606758</sup>
 
+<br>
 
 ## #1 CAD: Adding BrightMarkers into objects using Blender plugin
 
