@@ -3,7 +3,7 @@
 
    In this tutorial, we show how to embed and detect BrightMarkers for interactive applications. BrightMarker was published at [**2023 ACM Symposium on User Interface Software and Technology (UIST)**](https://uist.acm.org/2023/). Learn more about the project [here](https://hcie.csail.mit.edu/research/brightmarker/brightmarker.html).
    
-   <sub>By [Mustafa Doga Dogan](https://www.dogadogan.com/)\*, Raul Garcia-Martin\*†, Patrick William Haertel\*, Jamison John O'Keefe\*, Ahmad Taka\*, Akarsh Aurora\*, Raul Sanchez-Reillo†, and [Stefanie Mueller](https://hcie.csail.mit.edu/stefanie-mueller.html)\*</sub>
+   <sub>By [Mustafa Doga Dogan](https://www.dogadogan.com/)\*, [Raul Garcia-Martin](https://es.linkedin.com/in/ra%C3%BAl-garc%C3%ADa-mart%C3%ADn-232b2a116)\*†, Patrick William Haertel\*, Jamison John O'Keefe\*, Ahmad Taka\*, Akarsh Aurora\*, Raul Sanchez-Reillo†, and [Stefanie Mueller](https://hcie.csail.mit.edu/stefanie-mueller.html)\*</sub>
    
    <sup>\*MIT and †Universidad Carlos III de Madrid</sup>
   
@@ -101,6 +101,11 @@ Once you're satisfied with your settings, click **OK** and see the results! If y
 If you'd like to test BEI and create the objects used in the paper, see our [example objects](blender/Example%20Objects/).
 
 ## #2 3D Printing
+
+### IR-Fluorescent Filament by DIC
+
+The marker should be printed using the IR-fluorescent filament by [DIC](https://www.dic-global.com/en/news/2023/r_and_d/20230911102035.html). You can get this filament from DIC by contacting their Composite Material Products Division’s Composite Material Marketing Group at [comm-marketing@ma.dic.co.jp](comm-marketing@ma.dic.co.jp).
+
 
 ### Exporting from Blender to Cura
 
