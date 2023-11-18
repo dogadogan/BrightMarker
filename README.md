@@ -1,9 +1,9 @@
 # BrightMarker: 3D Printed Fluorescent Markers for Object Tracking
 
 
-   In this tutorial, we show how to embed and detect BrightMarkers for interactive applications. BrightMarker was published at [**2023 ACM Symposium on User Interface Software and Technology (UIST)**](https://uist.acm.org/2023/) . Learn more about the project [here](https://hcie.csail.mit.edu/research/brightmarker/brightmarker.html).
+   In this tutorial, we show how to embed and detect BrightMarkers for interactive applications. BrightMarker was published at [**2023 ACM Symposium on User Interface Software and Technology (UIST)**](https://uist.acm.org/2023/). Learn more about the project [here](https://hcie.csail.mit.edu/research/brightmarker/brightmarker.html).
    
-   <sub>By [Mustafa Doga Dogan](https://www.dogadogan.com/)\*†, Raul Garcia-Martin\*, Patrick William Haertel\*, Jamison John O'Keefe\*, Ahmad Taka\*, Akarsh Aurora\*, Raul Sanchez-Reillo†, and [Stefanie Mueller](https://hcie.csail.mit.edu/stefanie-mueller.html)\*</sub>
+   <sub>By [Mustafa Doga Dogan](https://www.dogadogan.com/)\*, Raul Garcia-Martin\*†, Patrick William Haertel\*, Jamison John O'Keefe\*, Ahmad Taka\*, Akarsh Aurora\*, Raul Sanchez-Reillo†, and [Stefanie Mueller](https://hcie.csail.mit.edu/stefanie-mueller.html)\*</sub>
    
    <sup>\*MIT and †Universidad Carlos III de Madrid</sup>
    
@@ -83,7 +83,7 @@ Now you should see a popup interface with four input categories to ensure your m
 
 3. **Marker Specifications**
 
-    * Use suggested thicknesses for object color: this allows you to choose the color filament that your object will be printed with to automatatically determine the optimal marker and shell thicknesses.
+    * Use suggested thicknesses for object color: this allows you to choose the color filament that your object will be printed with to automatically determine the optimal marker and shell thicknesses.
     * Use custom values: this allows you to choose your own shell thickness (how deep in the model the marker is embedded) and marker thickness (how thick the marker is).
     * Side length: this sets the side length of all of the markers to be embedded (e.g. a side length of 10 means your markers will be 10 x 10).
 
@@ -125,30 +125,22 @@ Once the proper extruder is selected, we need to merge the models. This is easy 
 
 Make sure Extruder 1 and Extruder 2 are setup corresponding to the filaments you are using. The extruder used for the fluorescent filament (we use extruder 2) should be set to Generic ABS.
 
-If you would like to use the same Cura settings we used, download this [Cura Profile](cura/abs_brightmarker_cura_profile.curaprofile). This profile uses dynamic layer heights so that the codes can be as detailed as possible, but the rest of the model can print at a decent speed. There are also many other parameters that have been fine tuned for our use.
+If you would like to use the same Cura settings we used, download this [Cura Profile](cura/abs_brightmarker_cura_profile.curaprofile). This profile uses dynamic layer heights so that the codes can be as detailed as possible, but the rest of the model can print at a decent speed. There are also many other parameters that have been fine-tuned for our use.
 
-To add the profile to Cura go to **Preferences -> Configure Cura -> Profiles -> Import**. This profile is designed to be used with Generic ABS in Extruder 1, but you can fine tune the profile to your needs. Once the settings are right for your printer, click **Slice**.
+To add the profile to Cura go to **Preferences -> Configure Cura -> Profiles -> Import**. This profile is designed to be used with Generic ABS in Extruder 1, but you can fine-tune the profile to your needs. Once the settings are right for your printer, click **Slice**.
  
 Now you can print the sliced file using your 3D printer!
 
 
 ## #3 Image processing with OpenCV
 
-- **Patrick and Raul**: Provide the code, instructions on how to use it
-- checkerboard calibration
-- lighting conditions
-
 Once you have 3D printed your object embedding your QR or AurUco BrightMarker, you are ready to detect and read it.
+
+It is recommended that you use PyCharm to run the decoder demos both for QR and Aruco, however, the code can be run from a Terminal as well.
  
 ### Detecting and reading QR codes
-**Hardware**
 
-- Write
 
-**Software**
-- It is recommended that you use PyCharm to run the decoder demos both for QR and Aruco, however, the code can be run from a terminal.
-  
-- Have Python 3 and pip3 pre-installed on your system link for this is here version 3.10 or greater should work just fine
   
 - Run the following command in the terminal:
   * pip install numpy opencv-contrib-python dbr
@@ -168,13 +160,6 @@ Once you have 3D printed your object embedding your QR or AurUco BrightMarker, y
 - You should see a window popup on your screen if everything went alright  
 
 ### Detecting and reading ArUco markers
-
-**Hardware**
-
-- Write
-
-**Software**
-- It is recommended that you use PyCharm to run the decoder demos both for QR and Aruco, however, the code can be run from a terminal.
   
 - Have Python 3 and pip3 pre-installed on your system link for this is here version 3.10 or greater should work just fine
   
@@ -187,11 +172,6 @@ Once you have 3D printed your object embedding your QR or AurUco BrightMarker, y
 * opencv-contrib-python
 * dbr
 
-**Camera calibration**
-
-- Write
-
-**Instructions**
 
 ## #4 Mobile detection with OnePlus 8 Pro
 
