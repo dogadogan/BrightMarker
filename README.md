@@ -15,6 +15,8 @@
 <p align="center">
   <img src="docs/BrightMarker_teaser.jpg">
 </p>
+<sup>BrightMarkers are embedded into objects using a NIR-fluorescent filament. (a) When viewed with a NIR camera with the matching filter, the markers appear with high contrast, which allows them to be tracked even when the objects are in motion, e.g., on a conveyor belt. (b) BrightMarker  can be used to fabricate custom wearables for tracking, or (c) for transforming physical controls into precise input methods in mixed reality environments.</sup>
+
 
 
 ## #1 CAD: Adding BrightMarkers into objects using Blender plugin
