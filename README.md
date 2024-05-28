@@ -142,37 +142,38 @@ Now you can print the sliced file using your 3D printer!
 
 ## #3 Image processing with OpenCV
 
-Once you have 3D printed your object embedding your QR or AurUco BrightMarker, you are ready to detect and read it.
+- Coming soon!
+- Once you have 3D printed your object embedding your QR or AurUco BrightMarker, you are ready to detect and read it.
 
 
  
 ### Detecting and reading the codes
 
 - You can use Terminal or PyCharm to run the decoder demos both for QR and ArUco.
-- Have Python 3 and pip3 pre-installed on your system link for this is here version 3.10 or greater should work just fine.
-- Run the following command in the Terminal:
-  * pip install numpy opencv-contrib-python dbr
-  
-- Or in PyCharm navigate to File > Settings > Project > Python Interpreter > Install packages (click the plus sign) and install the following packages:
+- Have Python 3 and pip3 pre-installed on your system (version 3.10 or greater should work just fine).
+- Run the following command in the Terminal, in case you do not have these packages available in your environment:
 
-* numpy
-* opencv-contrib-python
-* dbr
+   `pip install numpy opencv-contrib-python dbr`
+  
+   or in PyCharm navigate to File > Settings > Project > Python Interpreter > Install packages (click the plus sign) and install the following packages:
+
+   * numpy
+   * opencv-contrib-python
+   * dbr
 
 **Instructions**
 
 - Navigate to  > .py
 - Open the file in an editor
-- Navigate to line 22 and confirm that CAMERA_STREAM is the same as the IR webcam ID
-  * CAMERA_STREAM = 1 works, depending on the computer. On some computers, it can be 0, 1, or 2, etc. based on whether there is one or more internal webcams.
+- Navigate to line 22 and confirm that `CAMERA_STREAM` is the same as the IR webcam ID
+  * `CAMERA_STREAM = 1` works, depending on the computer. On some computers, it can be 0, 1, or 2, etc. based on whether there is one or more internal webcams.
 - You should see a window popup on your screen if everything went alright  
 
 
 
 ## #4 Mobile detection with OnePlus 8 Pro
 
-- **Raul**: LED attachment, circuit file, list of components
-- refer to RGM vision app?
+- Coming soon!
 
 
 ## #5 AR/VR detection module
