@@ -104,7 +104,7 @@ If you'd like to test BEI and create the objects used in the paper, see our [exa
 
 ### IR-Fluorescent Filament by DIC
 
-The marker should be printed using the IR-fluorescent filament by [DIC](https://www.dic-global.com/en/news/2023/r_and_d/20230911102035.html). You can get this filament from DIC by contacting their Composite Material Products Division’s Composite Material Marketing Group at [comm-marketing@ma.dic.co.jp](comm-marketing@ma.dic.co.jp).
+The marker should be printed using the IR-fluorescent filament by [DIC](https://www.dic-global.com/en/news/2023/r_and_d/20230911102035.html). You can get this filament from DIC by contacting their Composite Material Products Division’s Composite Material Marketing Group at [comm-marketing@ma.dic.co.jp](comm-marketing@ma.dic.co.jp) and [dic-fc-tokyo@ma.dic.co.jp](dic-fc-tokyo@ma.dic.co.jp).
 
 
 ### Exporting from Blender to Cura
